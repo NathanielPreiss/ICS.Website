@@ -1,0 +1,52 @@
+{
+	"name": "fulltest",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write .",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"devDependencies": {
+		"@storybook/addon-actions": "^6.5.13",
+		"@storybook/addon-essentials": "^6.5.16",
+		"@storybook/addon-interactions": "^6.5.16",
+		"@storybook/addon-links": "^6.5.16",
+		"@storybook/addon-svelte-csf": "^2.0.11",
+		"@storybook/builder-vite": "^0.4.2",
+		"@storybook/svelte": "^6.5.16",
+		"@storybook/testing-library": "^0.0.13",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.11.0",
+		"@typescript-eslint/eslint-plugin": "^5.55.0",
+		"@typescript-eslint/parser": "^5.55.0",
+		"eslint": "^8.36.0",
+		"eslint-config-prettier": "^8.7.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"pino-pretty": "^10.0.0",
+		"prettier": "^2.8.4",
+		"prettier-plugin-svelte": "^2.9.0",
+		"svelte": "^3.56.0",
+		"svelte-check": "^3.1.4",
+		"svelte-loader": "^3.1.7",
+		"svelte-preprocess": "^5.0.1",
+		"tslib": "^2.5.0",
+		"typescript": "^4.9.5",
+		"vite": "^4.1.4"
+	},
+	"type": "module",
+	"dependencies": {
+		"@auth0/auth0-spa-js": "^2.0.4",
+		"@neoconfetti/svelte": "^1.0.0",
+		"auth0-js": "^9.20.2",
+		"axios": "^1.3.4",
+		"bootstrap": "^5.2.3",
+		"pino": "^8.11.0"
+	}
+}
